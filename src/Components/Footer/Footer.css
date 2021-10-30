@@ -1,0 +1,27 @@
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    background-color: #311b92;
+    color: white;
+}
+
+.our-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+.our-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-section{
+        flex-direction: column;
+        text-align: center;
+    }
+}

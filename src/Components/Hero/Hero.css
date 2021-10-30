@@ -1,0 +1,16 @@
+.hero-section{
+    background-image: url(https://i.ibb.co/J5gb0rZ/pexels-ashley-fontana-705771.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 800;
+}

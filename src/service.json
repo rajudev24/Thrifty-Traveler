@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Mexico",
+        "prcie" : "2500",
+        "img": "https://i.ibb.co/sJFcgnW/pexels-christian-paul-del-rosario-1076240.jpg",
+        "description": "I had been to Mexico many times. I loved it. It's a very exotic, interesting, severely crazy environment."
+    },
+    {
+        "name": "Maldive",
+        "prcie" : "3500",
+        "img": "https://i.ibb.co/2Kjm4MK/pexels-asad-photo-maldives-1320684.jpg",
+        "description": "It's not possible to ever forget the life moments where, in the morning ocean breeze, you can walk along the beach and pick colorful shells and corals"
+    },
+    {
+        "name": "Switzerland",
+        "prcie" : "4500",
+        "img": "https://i.ibb.co/XJsgsQW/pexels-asad-photo-maldives-1450363.jpg",
+        "description": "Discover Switzerland and get tips where to go and what to do. From people who need to know, real Switzerland experts from Switzerland Tourism"
+    },
+    {
+        "name": "Thailand",
+        "prcie" : "2200",
+        "img": "https://i.ibb.co/XtcnCkR/pexels-asad-photo-maldives-3601425.jpg",
+        "description": "One of the dreams on my wish list is to spend more time in Thailand. · My parents are Vietnamese refugees; they left Vietnam after the war."
+    },
+    {
+        "name": "Austria",
+        "prcie" : "4300",
+        "img": "https://i.ibb.co/k1QwqZ9/pexels-asad-photo-maldives-1450354.jpg",
+        "description": "I am thrice homeless, as a native of Bohemia in Austria, as an Austrian among Germans, and as a Jew throughout the world."
+    },
+    {
+        "name": "New Zealand",
+        "prcie" : "5500",
+        "img": "https://i.ibb.co/hFcs5z1/pexels-asad-photo-maldives-1287441.jpg",
+        "description": "We didn't, after all, sing Another One Bites The Dust as the coffin was carried out; Hazel and the vicar had settled instead on the more"
+    }
+
+]

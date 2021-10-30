@@ -1,0 +1,16 @@
+.package{
+    padding: 20px;
+    /* border: 1px solid lightsteelblue; */
+    margin: 10px;
+    text-align: center;
+}
+.package img{
+    height: 350px;
+}
+
+.book-btn{
+    background-color: #311b92;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 10px;
+}

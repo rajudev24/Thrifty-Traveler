@@ -1,0 +1,38 @@
+.tour-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.travel{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.tour-details{
+    padding: 20px;
+}
+
+.location{
+    background-color: rgb(221, 167, 131);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px){
+    .tour-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .travel{
+        margin-top: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .istanlbul-img img{
+        width: 350px;
+    }
+}

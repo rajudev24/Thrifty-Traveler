@@ -1,0 +1,16 @@
+.order-hero{
+    background-image: url('https://i.ibb.co/m5wJvZG/pexels-asad-photo-maldives-1268855-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.orders-items{
+    text-align: center;
+    margin: 30px;
+}
+.cancel-btn{
+    background-color: wheat;
+    padding: 5px 10px;
+    border-radius: 10px; 
+}

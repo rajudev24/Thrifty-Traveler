@@ -1,0 +1,41 @@
+.order-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.user-section{
+    width: 40%;
+    
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.user-details input{
+    margin: 6px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid green;
+}
+.service-details{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+.service-details img{
+    height: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    .order-section{
+        flex-direction: column;
+    }
+    .user-section{
+        width: 100%;
+        
+    }
+    .service-details{
+        width: 100%;
+    }
+}

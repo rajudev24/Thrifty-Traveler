@@ -1,0 +1,15 @@
+.gallery-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   grid-row-gap: 10px;
+   margin: 10px;
+   justify-items: center;
+   
+}
+
+
+@media only screen and (max-width: 600px){
+    .gallery-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
