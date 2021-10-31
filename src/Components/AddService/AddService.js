@@ -1,12 +1,14 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import './AddService.css'
 
 const AddService = () => {
+    const [service, setService] = useState();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
+        setService(data)
         axios.post('https://damp-bastion-85274.herokuapp.com/services', data)
             .then(res => {
                 if(res.data.insertedId){
@@ -25,8 +27,16 @@ const AddService = () => {
                 <input {...register("img")} placeholder='Image URL' />
                 <input type="submit" />
             </form>
-            <div>
-                
+            <div >
+                {
+                    service?.name?
+                   <div className=' new-service'>
+                        <img src={service?.img} alt="" />
+                    <h3>{service?.name} </h3>
+                    <p>{service?.description} </p>
+                    <h3>${service?.prcie} </h3> 
+                   </div>: ''
+                }
             </div>
         </div>
     );

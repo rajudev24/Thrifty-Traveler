@@ -49,7 +49,7 @@ const Order = () => {
                     <h2>${findService?.prcie} </h2>
                 </div>
                 <div className='user-section' >
-                    <form className='user-details' onSubmit={handleSubmit(onSubmit)}>   
+                    <form className='user-details' onSubmit={handleSubmit(onSubmit)}>
                         
                         <input defaultValue={user.displayName} {...register("Name")} />
                         <input defaultValue={user.email} {...register("email")} />

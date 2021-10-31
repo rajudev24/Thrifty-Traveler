@@ -14,8 +14,26 @@
     border: 1px solid blue;
     border-radius: 5px;
 }
+.new-service{
+    text-align: center;
+    border-radius: 20px;
+    width: 40%; 
+    margin: 0 auto;
+    background-color: lightsteelblue;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.new-service img{
+    margin-top: 10px;
+    height: 300px;
+    border-radius: 10px;
+}
 @media only screen and (max-width: 600px){
     .add-service{
         width: 90%;
+    }
+    .new-service{
+        width: 80%;
     }
 }

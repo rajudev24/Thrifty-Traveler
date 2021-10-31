@@ -23,7 +23,7 @@ const FeatureTour = () => {
                         <div className='tour-details'>
                             <h4>Week At Sunny Beatch</h4>
                             <p>Istanbul, largest city and principal seaport of Turkey. Historically known as Byzantium and then Constantinople, it was the capital of the Byzantine Empire</p>
-                            <h3>$6500</h3> <span> -2 days 3 nights</span> <br /> <br />
+                            <h3>$5500</h3> <span> -2 days 3 nights</span> <br /> <br />
                             <span className='location'>Tour in Autria</span>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const FeatureTour = () => {
                         <div className='tour-details'>
                             <h4>Week At Turkey</h4>
                             <p>Istanbul, largest city and principal seaport of Turkey. Historically known as Byzantium and then Constantinople, it was the capital of the Byzantine Empire</p>
-                            <h3>$6500</h3> <span> -2 days 3 nights</span> <br /> <br />
+                            <h3>$4500</h3> <span> -2 days 3 nights</span> <br /> <br />
                             <span className='location'>Tour in Turkey</span>
                         </div>
                     </div>
