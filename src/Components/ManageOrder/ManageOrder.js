@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ManageOrder = (props) => {
-    const {Name, _id} = props.order
+    const {tripCountry, Name, _id} = props.order
     //Delete Order
     const handeleDeleteOrder = id =>{
         fetch(`https://damp-bastion-85274.herokuapp.com/orders/${id}`, {
@@ -19,7 +19,8 @@ const ManageOrder = (props) => {
     return (
         <div className='text-center p-3'>
             
-            <h4>Orders {Name}</h4>
+            <h4>Order person Name: {Name}</h4> 
+            <h5>Order Package Name: {tripCountry} </h5>
             <button onClick={()=> handeleDeleteOrder(_id)}>Delete</button>
         </div>
     );

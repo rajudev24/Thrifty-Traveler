@@ -10,19 +10,22 @@ import axios from 'axios';
 const Order = () => {
     const { user } = useAuth();
     const { id } = useParams();
-    const [services, setServices] = useState([])
+    const [service, setService] = useState({})
     const history = useHistory();
 
     useEffect(() => {
-        fetch('https://damp-bastion-85274.herokuapp.com/services')
+        fetch(`https://damp-bastion-85274.herokuapp.com/services/${id}`)
             .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
-    const findService = services.find(service => service?._id === id);
-    // const tripName = findService?.name;
-    const { register, handleSubmit, reset } = useForm();
+            .then(data => setService(data))
+    }, []);
+
+    
+    const { register, handleSubmit, reset } = useForm({ defaultValues: {
+        status: 'Pending',
+    } });
+
     const onSubmit = data => {
-        console.log(data)
+        // console.log(data)
         axios.post('https://damp-bastion-85274.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
@@ -43,14 +46,17 @@ const Order = () => {
             <img src="" alt="" />
             <div className='order-section'>
                 <div className='service-details'>
-                    <img src={findService?.img} alt="" />
-                    <h4>{findService?.name} </h4>
-                    <p>{findService?.description} </p>
-                    <h2>${findService?.prcie} </h2>
+                    <img src={service.img} alt="" />
+                    <h4>{service.name} </h4>
+                    <p>{service.description} </p>
+                    <h2>${service.prcie} </h2>
                 </div>
                 <div className='user-section' >
                     <form className='user-details' onSubmit={handleSubmit(onSubmit)}>
-                        
+                        <strong>WOW! You have selected our {service.name} Trip package </strong>
+                        {
+                            service?.name?<input defaultValue={service.name} {...register("tripCountry")} /> : ''
+                        }
                         <input defaultValue={user.displayName} {...register("Name")} />
                         <input defaultValue={user.email} {...register("email")} />
                         <input {...register("address")} placeholder='address' />
